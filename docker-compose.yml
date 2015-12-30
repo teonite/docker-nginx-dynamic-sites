@@ -1,5 +1,5 @@
 static-sites:
-  image: tcn.re/service/docker-nginx-dynamic-sites
+  image: tcn.re/service/nginx-dynamic-sites
   ports:
     - "80:20080"
     - "443:20443"
