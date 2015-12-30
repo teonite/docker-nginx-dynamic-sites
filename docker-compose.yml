@@ -1,7 +1,7 @@
 static-sites:
   image: tcn.re/service/nginx-dynamic-sites
   ports:
-    - "80:20080"
-    - "443:20443"
+    - "20080:80"
+    - "20443:443"
   volumes:
     - /s/sites:/sites
