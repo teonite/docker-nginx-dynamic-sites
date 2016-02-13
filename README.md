@@ -6,7 +6,7 @@ The only thing you need to do is:
 
 1. Launch the contener
 2. Set all domain names to the IP that the container is exposed
-3. Put all your sites to /sites/ directory with the domain names.
+3. Put all your sites to /sites/ (volume exposed) directory with the domain names.
 
 ### How does it work?
 
@@ -20,7 +20,7 @@ We've created this simple solution, as our whole infrastructure runs on Docker -
 
 To run it:
 
-    $ docker run -d -p 80:80 -v /path/to/sites:/sites/ teonite/docker-nginx-dynamic-sites
+    $ docker run -d -p 80:80 -v /path/to/sites:/sites/ teonite/nginx-dynamic-sites
 
 ### Log files
 
