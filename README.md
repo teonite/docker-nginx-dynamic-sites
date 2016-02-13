@@ -1,4 +1,4 @@
-docker-nginx-dynamic-sites is a simple solution to have one NGINX docker/container instance for multiple domains.
+docker-nginx-dynamic-sites is a simple solution to have one NGINX docker/container instance for multiple domains (virtual hosts).
 
 The only thing you need to do is:
 
