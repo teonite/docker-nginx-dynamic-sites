@@ -1,4 +1,12 @@
-docker-nginx-dynamic-sites is a container only with NGINX that:
+docker-nginx-dynamic-sites is a simple solution to have one NGINX docker/container instance for multiple domains.
+
+The only thing you need to do is:
+
+1. Launch the contener
+2. Set all domain names to the IP that the container is exposed
+3. Put all your sites to /sites/ directory with the domain names.
+
+### How does it work?
 
 1. detects and "creates" a virtual host based on the requested URL domain
 2. tries to find a folder with the domain name in the `/sites/` directory (eg. `/sites/domainname.com`)
