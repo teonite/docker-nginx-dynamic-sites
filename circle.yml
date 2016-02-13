@@ -5,7 +5,8 @@ machine:
 dependencies:
   override:
     - docker info
-    - docker build -t teonite/docker-nginx-dynamic-sites .
+    - docker build -t "teonite/docker-nginx-dynamic-sites:$CIRCLE_BUILD_NUM" .
+    - docker tag "teonite/docker-nginx-dynamic-sites:$CIRCLE_BUILD_NUM" "teonite/docker-nginx-dynamic-sites:latest"
 
 test:
   override:
@@ -17,4 +18,5 @@ deployment:
     branch: master
     commands:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-      - docker push teonite/docker-nginx-dynamic-sites
+      - docker push "teonite/docker-nginx-dynamic-sites:$CIRCLE_BUILD_NUM"
+      - docker push "teonite/docker-nginx-dynamic-sites:latest"
