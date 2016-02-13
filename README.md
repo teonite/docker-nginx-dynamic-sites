@@ -20,3 +20,6 @@ To run it:
 
     $ docker run -d -p 80:80 -v /path/to/sites:/sites/ teonite/docker-nginx-dynamic-sites
 
+### Log files
+
+There is only one error log file (`/var/log/nginx/error.log`). Access logs are created with domain name eg. `/var/log/nginx/domainname.com.access.log`.
