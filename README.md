@@ -1,4 +1,4 @@
-Build: [![Circle CI](https://circleci.com/gh/teonite/docker-nginx-dynamic-sites.svg?style=svg)](https://circleci.com/gh/teonite/docker-nginx-dynamic-sites) [![](https://badge.imagelayers.io/teonite/nginx-dynamic-sites:latest.svg)](https://imagelayers.io/?images=teonite/nginx-dynamic-sites:latest 'Get your own badge on imagelayers.io')
+Build: [![Circle CI](https://circleci.com/gh/teonite/docker-nginx-dynamic-sites.svg?style=svg)](https://circleci.com/gh/teonite/docker-nginx-dynamic-sites) [![](https://badge.imagelayers.io/teonite/nginx-dynamic-sites:latest.svg)](https://imagelayers.io/?images=teonite/nginx-dynamic-sites:latest 'Get your own badge on imagelayers.io')[![TNT]](http://teonite.com/img/inorbit_by_tnt.png)
 
 docker-nginx-dynamic-sites is a simple solution to have one NGINX docker/container instance for multiple domains (virtual hosts).
 
