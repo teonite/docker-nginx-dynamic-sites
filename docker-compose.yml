@@ -1,5 +1,5 @@
 static-sites:
-  image: tcn.re/service/nginx-dynamic-sites
+  image: teonite/nginx-dynamic-sites
   ports:
     - "20080:80"
     - "20443:443"
