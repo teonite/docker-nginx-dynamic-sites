@@ -1,4 +1,4 @@
-FROM nginx:1.9.9
+FROM nginx:1.15.8-alpine
 MAINTAINER Robert Olejnik robert@teonite.com
 
 # install/updates certificates
